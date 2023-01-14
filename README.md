@@ -13,7 +13,7 @@
 - ```npm inistall cypress```
 - ```npx cypress open\npx cypress run```
 
--- To add Faker library use the following command
+- To add Faker library use the following command
 - ```npm install --save-dev @faker-js/faker```
 
 - To generate Mochawesome Report
