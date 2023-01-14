@@ -1,7 +1,7 @@
 # Cypress_POM_OrangeHRM
 
 ## Tools and Technologies
--Node.js
+- Node.js
 - Faker Library
 - Mochawesome
 - File System
