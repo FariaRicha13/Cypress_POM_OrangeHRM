@@ -19,7 +19,7 @@
 - To generate Mochawesome Report
 - ``` npm i --save-dev cypress-mochawesome-reporter```
 - ``` npm i mochawesome --save-dev```
-- ``` npm i mochawesome-merge --save dev```
+- ``` npm i mochawesome-merge --save-dev```
 - ``` npx cypress run --reporter mochawesome```
 - ``` npx mochawesome-merge .\cypress\reports\*.json | out-file -encoding ascii ./report1.json```
 - ```  npx marge ./report1.json --reportDir ./cypress\reports```
