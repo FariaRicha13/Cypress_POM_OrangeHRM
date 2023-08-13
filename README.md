@@ -10,7 +10,7 @@
 - clone this project
 - Hit the following commands
 - ```npm init -y```
-- ```npm inistall cypress```
+- ```npm install cypress```
 - ```npx cypress open\npx cypress run```
 
 - To add Faker library use the following command
