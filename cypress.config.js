@@ -4,10 +4,14 @@ module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     charts: true,
-    reportPageTitle: 'Cypress Automation Report',
+    reportPageTitle: 'Orange HRM Automation Report',
+    reportDir:'cypress/reports',
     embeddedScreenshots: true,
     inlineAssets: true,
     saveAllAttempts:false,
+    code:true,
+    video:false,
+    addTestContext:false
   },
 
   e2e: {

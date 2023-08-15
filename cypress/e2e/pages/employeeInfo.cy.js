@@ -9,7 +9,11 @@ export class EmployeeInfo {
         cy.wait(2000)
     }
     updateNationality(nationality) {
-        cy.get(':nth-child(5) > :nth-child(1) > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text').click()
+        cy.wait(5000)
+       
+
+       
+       cy.get('.oxd-select-text-input').eq(0).click({force:true})
         cy.contains(nationality + '').click()
         cy.wait(2000)
     }

@@ -2,14 +2,14 @@
   "stats": {
     "suites": 1,
     "tests": 1,
-    "passes": 0,
+    "passes": 1,
     "pending": 0,
-    "failures": 1,
-    "start": "2023-01-03T03:51:33.930Z",
-    "end": "2023-01-03T03:52:15.963Z",
-    "duration": 42033,
+    "failures": 0,
+    "start": "2023-08-15T08:12:28.569Z",
+    "end": "2023-08-15T08:13:52.903Z",
+    "duration": 84334,
     "testsRegistered": 1,
-    "passPercent": 0,
+    "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "f222e2fe-9a37-42b3-a59f-0afeb5458ce4",
+      "uuid": "1fd85b7f-a0b0-451e-9591-15b0221da566",
       "title": "",
       "fullFile": "cypress\\e2e\\index.cy.js",
       "file": "cypress\\e2e\\index.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "cfca69e6-23b7-4566-a2ec-d7ba6f6dea48",
+          "uuid": "f4ac34ad-a09f-4754-b288-301c179270e9",
           "title": "Orange HRM Flow1",
           "fullFile": "",
           "file": "",
@@ -38,33 +38,29 @@
               "title": "Main",
               "fullTitle": "Orange HRM Flow1 Main",
               "timedOut": null,
-              "duration": 36909,
-              "state": "failed",
-              "speed": null,
-              "pass": false,
-              "fail": true,
+              "duration": 79325,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
               "pending": false,
-              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"\\\\index.cy.js\\\\Orange HRM Flow1 -- Main (failed).png\"\n      }\n    ]\n  ]\n}",
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\index.cy.js\"\n}",
               "code": "login.visitLoginPage();\nlogin.doLoginAdmin();\ncy.wait(2000);\ndashboardRunner.assertDashboard();\ncy.wait(2000);\ndashboardRunner.clickPIM();\npimRunner.pimBeforeAdd();\ncy.wait(2000);\naddEmpRunner.createUserInfo();\ncy.wait(2000);\naddEmpRunner.updateEmpInfo();\ncy.wait(2000);\naddEmpRunner.createSecondUser();\ncy.wait(1000);\naddEmpRunner.doLogout();\ncy.wait(1000);\nlogin.doLoginUser();\ncy.wait(2000);\ndashboardRunner.assertDashboardUser();",
-              "err": {
-                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(5) > :nth-child(1) > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text`, but never found it.",
-                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `:nth-child(5) > :nth-child(1) > :nth-child(1) > .oxd-input-group > :nth-child(2) > .oxd-select-wrapper > .oxd-select-text`, but never found it.\n    at EmployeeInfo.selectInfo (webpack:///./cypress/e2e/pages/employeeInfo.cy.js:13:11)\n    at AddEmployeeRunner.updateEmpInfo (webpack:///./cypress/e2e/testRunner/addEmpRunner.cy.js:23:12)\n    at Context.eval (webpack:///./cypress/e2e/index.cy.js:24:17)",
-                "diff": null
-              },
-              "uuid": "10fe6d64-68e3-4c03-b58a-9a3728bab290",
-              "parentUUID": "cfca69e6-23b7-4566-a2ec-d7ba6f6dea48",
+              "err": {},
+              "uuid": "bf9496d5-610e-4e9f-9156-54598cbd4344",
+              "parentUUID": "f4ac34ad-a09f-4754-b288-301c179270e9",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
-          "passes": [],
-          "failures": [
-            "10fe6d64-68e3-4c03-b58a-9a3728bab290"
+          "passes": [
+            "bf9496d5-610e-4e9f-9156-54598cbd4344"
           ],
+          "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 36909,
+          "duration": 79325,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -88,7 +84,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": false,
+        "saveHtml": true,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -99,10 +95,10 @@
     "marge": {
       "options": {
         "charts": true,
-        "overwrite": false,
-        "html": false,
-        "json": true,
-        "reportDir": "cypress/reports"
+        "reportPageTitle": "Cypress Automation Report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true,
+        "saveAllAttempts": false
       },
       "version": "6.2.0"
     }
