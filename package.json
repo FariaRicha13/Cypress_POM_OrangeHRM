@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run"
+    "test": "npx cypress run",
+    "cypress:open":"npx cypress open",
+    "cypress:chromeHeaded": "npx cypress run --headed --browser chrome",
+    "cypress:headed": "npx cypress run --headed ",
+    "cypress:runDefault": "npx cypress run --browser chrome "
   },
   "keywords": [],
   "author": "",
